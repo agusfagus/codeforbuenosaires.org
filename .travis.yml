@@ -1,0 +1,32 @@
+language: ruby
+rvm:
+  - 2.3.0
+
+env:
+  global:
+    - RUBY_GC_MALLOC_LIMIT=90000000
+    - RUBY_GC_HEAP_FREE_SLOTS=200000
+    - SECURITY_SECRET_TOKEN=traviscitraviscitraviscitraviscitravisci
+
+services:
+  - postgresql
+  - redis-server
+
+before_install:
+  - "echo '--colour' > ~/.rspec"
+  - "echo 'gem: --no-document' > ~/.gemrc"
+
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - psql -c "CREATE USER \"codeforbuenosaires\" WITH PASSWORD 'codeforbuenosaires';" -U postgres
+  - psql -c "DROP DATABASE IF EXISTS \"codeforbuenosaires_test\";" -U postgres
+  - psql -c "CREATE DATABASE \"codeforbuenosaires_test\" ENCODING 'utf8';" -U postgres
+  - bundle exec rake db:migrate test:prepare
+
+script:
+  - bundle exec rspec spec -fd
+  - bundle exec rubocop app spec -R --format simple
+  - bundle exec scss-lint app/assets/stylesheets/
+
+cache:
+  bundler: true
