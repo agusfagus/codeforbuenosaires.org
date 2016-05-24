@@ -2,7 +2,7 @@ nav#navbar.navbar role="navigation"
   .navbar-header
     .navbar-inner
       = link_to root_path, class: 'brand' do
-        = image_tag "logo.svg", class: 'brand-img'
+        = image_tag "logo.png", class: 'brand-img'
       button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
         span.sr-only Toggle navigation
         span.icon-bar
@@ -16,12 +16,10 @@ nav#navbar.navbar role="navigation"
           input.search-input type='text' placeholder=t('navigation.search_placeholder')
     ul.nav.navbar-nav.navbar-right
       li.social
-        a.button-social href='https://www.instagram.com/buentour/' target='_blank'
-          = fa_icon 'instagram'
-        a.button-social href='https://www.facebook.com/buentour' target='_blank'
+        a.button-social href='https://www.facebook.com/codeforbuenosaires' target='_blank'
           = fa_icon 'facebook'
-        a.button-social href='https://twitter.com/BuenTour' target='_blank'
+        a.button-social href='https://twitter.com/codeforba' target='_blank'
           = fa_icon 'twitter'
       li
-        a.button-border href='mailto:info@buentour.com' target='_blank'
+        a.button-border href='mailto:info@codeforbuenosaires.org' target='_blank'
           = t('navigation.publish')
