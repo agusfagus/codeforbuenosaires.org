@@ -1,0 +1,27 @@
+.navbar {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid $light-blue;
+  padding: 0 40px;
+  background: $white;
+
+  .brand-img {
+    padding: 22px 0;
+  }
+}
+
+.navbar-nav > li > a {
+  font-size: 22px;
+  line-height: 70px;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+    background: lighten($light-blue, 50%);
+  }
+}
