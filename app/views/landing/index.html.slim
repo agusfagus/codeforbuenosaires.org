@@ -1,31 +1,30 @@
 .section.section-main
   = image_tag "cfba_logo1.svg", class:'main-logo'
   h1.headline-base.headline-main
-    | Lorem ipsum giladita sist amet
+    | Hagamos una ciudad mejor juntos
 #wwd.section.section-wwd
   h1.headline-base.section-title
     | Que es lo que hacemos
   p.paragraph-base.paragraph-wwd
-    | Lorem ipsum giladita sist amet Lorem ipsum giladit ipsum giladita sist amet Lorem ipsum giladita sist amet Lorem ipsum giladita sist amet Lorem ipsum giladita sist amet Lorem ipsum giladita sist ata sist
+    | Somos una brigade oficial de Code for America que busca crear una ciudad mejor utilizando los datos públicos de forma colaborativa
 #subscribe.section.section-subscribe
   h1.headline-base.headline-subscribe
-    | Si queres enterarte cuando organizamos gilada o cuando alguien se copo con un proyectin piola subscribite y te mandamos todo el spam por mail
-  a.button-base.button-fill href='#'
-    | copate
+    | Si querés enterarte de nuestros próximos eventos y como participar de la comunidad haz click en el siguiente botón:
+  = link_to 'Unirse', 'https://codeforbuenosaires.typeform.com/to/iok17n', class: 'button-base button-fill'
 #about.section.section-about
   h1.headline-base.section-title
     | Quienes somos
   .members
     .member
-      = image_tag 'http://www.placehold.it/150x150', class: 'member-avatar'
+      = image_tag 'agustina.jpg', class: 'member-avatar', alt: 'Agustina Fainguersch'
       h1.headline-base.member-name
-        | jorge asterisco
+        | Agustina Fainguersch
       h2.subheadline-base.member-email
-        |jasterisco@gilada.gg
+        = link_to 'agustina@codeforbuenosaires.org', 'mailto:agustina@codeforbuenosaires.org?Subject=CodeForBuenosAires%20Contact', target: '_blank'
     .member
-      = image_tag 'http://www.placehold.it/150x150', class: 'member-avatar'
+      = image_tag 'esteban.jpg', class: 'member-avatar', alt: 'Esteban Pintos'
       h1.headline-base.member-name
-        | jorge asterisco
+        | Esteban Pintos
       h2.subheadline-base.member-email
-        |jasterisco@gilada.gg
+        = link_to 'esteban@codeforbuenosaires.org', 'mailto:esteban@codeforbuenosaires.org?Subject=CodeForBuenosAires%20Contact', target: '_blank'
 

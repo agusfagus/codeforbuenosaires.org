@@ -139,6 +139,8 @@
 
   .member-avatar {
     border-radius: 100%;
+    width: 150px;
+    height: 150px;
   }
 
   .member-name {
@@ -153,15 +155,23 @@
   .member-email {
     font-size: 16px;
     margin: 0;
-    color: $mid-gray;
+
+    a {
+      color: $mid-gray;
+    }
   }
 }
 
 .footer {
   padding: 20px 40px;
   background: $light-blue;
+  text-align: center;
 }
 
 .footer-logo {
   width: 150px;
+}
+
+.footer-copyright {
+  color: $white;
 }
