@@ -110,7 +110,7 @@
 .headline-subscribe {
   margin: 0;
   max-width: 800px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   font-size: 40px;
   line-height: 50px;
   font-weight: 300;
@@ -118,6 +118,7 @@
 }
 
 .button-fill {
+  display: inline-block;
   background: $blue;
   color: $white;
   padding: 15px 0;
@@ -126,10 +127,16 @@
   letter-spacing: 1px;
   width: 100%;
   max-width: 300px;
-  display: block;
   text-align: center;
-  margin-left: 250px;
+  margin-left: 50px;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: lighten($blue, 15%);
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 .members {
@@ -169,13 +176,32 @@
 .footer {
   padding: 20px 40px;
   background: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-
-.footer-logo {
-  width: 150px;
 }
 
 .footer-copyright {
   color: $white;
+  margin-right: auto;
+}
+
+.button-social-round {
+  background: $white;
+  padding: 5px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-main {
+    background-attachment: initial;
+  }
+
+  .headline-main {
+    font-size: 3vw;
+  }
 }
