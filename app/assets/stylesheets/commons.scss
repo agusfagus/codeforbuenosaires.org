@@ -16,10 +16,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: asset-url('main_bg3.png');
+  background: asset-url('carlawosniak.png');
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+
+  .section-main-image-copyright {
+    display: none;
+  }
 
   &::after {
     content: ' ';
@@ -73,7 +77,7 @@
 
 .paragraph-wwd {
   max-width: 840px;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
   padding: 0 20px;
   line-height: 26px;
