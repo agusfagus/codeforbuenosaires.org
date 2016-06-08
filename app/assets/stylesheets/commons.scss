@@ -50,7 +50,8 @@
   background: rgba($white, 0.6);
   padding: 5px 20px;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 36px;
+  text-align: center;
 }
 
 
@@ -130,6 +131,7 @@
   text-align: center;
   margin-left: 50px;
   text-decoration: none;
+  margin-bottom: 20px;
 
   &:hover,
   &:focus {
@@ -203,5 +205,9 @@
 
   .headline-main {
     font-size: 3vw;
+  }
+
+  .section-subscribe .button-fill {
+    margin-left: 10px;
   }
 }

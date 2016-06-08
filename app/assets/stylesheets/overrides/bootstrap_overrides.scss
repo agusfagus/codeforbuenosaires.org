@@ -26,3 +26,13 @@
     background: lighten($light-blue, 50%);
   }
 }
+
+.navbar-toggle {
+  border: 1px solid $blue;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  .icon-bar {
+    background: $blue;
+  }
+}
