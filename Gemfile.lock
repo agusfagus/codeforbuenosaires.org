@@ -179,10 +179,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    meta-tags (2.1.0)
-      actionpack (>= 3.0.0)
-    metamagic (3.1.7)
-      rails (>= 3.0.0)
     method_source (0.8.2)
     mime-types (3.0)
       mime-types-data (~> 3.2015)
@@ -400,8 +396,6 @@ DEPENDENCIES
   jquery-turbolinks
   launchy
   loadjs
-  meta-tags
-  metamagic
   pg
   polyamorous
   pry-byebug

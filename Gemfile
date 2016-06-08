@@ -76,10 +76,6 @@ gem 'pundit'
 # Exceptions Report
 gem 'rollbar'
 
-# SEO Meta Tags
-gem 'metamagic'
-gem 'meta-tags'
-
 group :development do
   # Gem to detect N+1 queries
   gem 'bullet'

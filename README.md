@@ -92,10 +92,6 @@ You can find more documentation in the [docs](docs) folder
 7. Push your branch (`git push origin my-new-feature`)
 8. Create a new Pull Request
 
-## About
-
-This project is maintained by [Esteban Guido Pintos](https://github.com/epintos)
-
 ## License
 
 See [LICENSE.md](LICENSE.md)
