@@ -1,6 +1,8 @@
-// @import 'bootstrap-sprockets';
-// @import 'bootstrap';
-// @import 'font-awesome';
+@import 'variables/bootstrap_configuration';
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
 
 @import 'variables/colors';
 

@@ -1,0 +1,35 @@
+.section.section-main
+  .section-main-image-copyright
+    | Photo by Carla Wosniak: https://flic.kr/p/kSfPkB. Modified for Code For Buenos Aires
+  = image_tag "cfba_logo1.svg", class:'main-logo', alt: 'Code For Buenos Aires Logo'
+  h1.headline-base.headline-main
+    | CÓDIGO ABIERTO - INNOVACIÓN CÍVICA - TRANSPARENCIA
+#wwd.section.section-wwd
+  h1.headline-base.section-title
+    | Acerca de code for buenos aires
+  p.paragraph-base.paragraph-wwd
+    | Code for Buenos Aires es un programa apoyado por Code For America cuyo objetivo es promover la transparencia, los datos abiertos y la tecnología cívica en la Ciudad de Buenos Aires.
+  p.paragraph-base.paragraph-wwd
+    | Somos un grupo de ingenieros, innovadores, programadores, diseñadores, comunicadores, periodistas y entusiastas cívicos que nos reunimos para crear aplicaciones útiles para los ciudadanos usando código abierto.
+#subscribe.section.section-subscribe
+  h1.headline-base.headline-subscribe
+    | Dejanos tu mail y enterate de la últimas novedades y oportunidades para ayudar a la comunidad
+  = link_to 'Unirse', 'https://buenosairestech.typeform.com/to/bV1RBH', class: 'button-base button-fill', target: '_blank'
+  = link_to 'Colaborar en un proyecto', 'https://github.com/codeforbuenosaires/ideas', class:        'button-base button-fill', target: '_blank'
+#about.section.section-about
+  h1.headline-base.section-title
+    | Quienes somos
+  .members
+    .member
+      = image_tag 'agustina.jpg', class: 'member-avatar', alt: 'Agustina Fainguersch'
+      h1.headline-base.member-name
+        = link_to 'Agustina Fainguersch', 'https://ar.linkedin.com/in/afainguersch', target: '_blank'
+      h2.subheadline-base.member-email
+        = link_to 'agustina@codeforbuenosaires.org', 'mailto:agustina@codeforbuenosaires.org?Subject=CodeForBuenosAires%20Contact', target: '_blank'
+    .member
+      = image_tag 'esteban.jpg', class: 'member-avatar', alt: 'Esteban Pintos'
+      h1.headline-base.member-name
+        = link_to 'Esteban Pintos', 'https://ar.linkedin.com/in/epintos/en', target: '_blank'
+      h2.subheadline-base.member-email
+        = link_to 'esteban@codeforbuenosaires.org', 'mailto:esteban@codeforbuenosaires.org?Subject=CodeForBuenosAires%20Contact', target: '_blank'
+

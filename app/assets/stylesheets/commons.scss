@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding: 140px 80px;
+}
+
+.section-main {
+  height: 700px;
+  display: flex;
+  margin-top: 100px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: asset-url('carlawosniak.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  .section-main-image-copyright {
+    display: none;
+  }
+
+  &::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: asset-url('main_overlay.png');
+  }
+}
+
+.main-logo {
+  z-index: 1;
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.headline-main {
+  z-index: 1;
+  color: $blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $white;
+  padding: 5px 20px;
+  letter-spacing: 2px;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+.section-title {
+  color: $blue;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 60px;
+
+  &::after {
+    content: ' ';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    background: $light-blue;
+    transform: translateX(-50%);
+  }
+}
+
+.paragraph-wwd {
+  max-width: 840px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.section-wwd {
+  background: linear-gradient(183.2deg, $light-gray 80px, transparent 0),
+              linear-gradient(183.2deg, transparent calc(100% - 80px), $light-gray 0);
+  padding-bottom: 140px;
+}
+
+.section-subscribe {
+  background: $light-gray;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(183.2deg, $light-gray 80px, transparent 0);
+  }
+}
+
+.headline-subscribe {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 300;
+  color: $blue;
+}
+
+.button-fill {
+  display: inline-block;
+  background: $blue;
+  color: $white;
+  padding: 15px 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-left: 50px;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    background: lighten($blue, 15%);
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.members {
+  text-align: center;
+}
+
+.member {
+  text-align: center;
+  display: inline-block;
+  padding: 40px 60px;
+
+  .member-avatar {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .member-name {
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: $blue;
+  }
+
+  .member-email {
+    font-size: 16px;
+    margin: 0;
+
+    a {
+      color: $mid-gray;
+    }
+  }
+}
+
+.footer {
+  padding: 20px 40px;
+  background: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-copyright {
+  color: $white;
+  margin-right: auto;
+}
+
+.button-social-round {
+  background: $white;
+  padding: 5px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-main {
+    background-attachment: initial;
+  }
+
+  .headline-main {
+    font-size: 3vw;
+  }
+
+  .section-subscribe .button-fill {
+    margin-left: 10px;
+  }
+}
