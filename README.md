@@ -1,6 +1,20 @@
 Codeforbuenosaires
 ===============
 
+## Acerca de Code For Buenos Aires
+
+Code for Buenos Aires es un programa apoyado por Code for All cuyo objetivo es promover la transparencia, los datos abiertos y la tecnología cívica en la Ciudad de Buenos Aires.
+
+Somos un grupo de ingenieros, innovadores, programadores, diseñadores, comunicadores, periodistas y entusiastas cívicos que nos reunimos para crear aplicaciones útiles para los ciudadanos usando código abierto.
+
+## Quienes somos?
+
+- [Agustina Fainguersch](mailto:agustina@codeforbuenosaires.org)
+- [Esteban Pintos](mailto:esteban@codeforbuenosaires.org)
+
+Technical Docs
+================
+
 [![Build Status](https://travis-ci.org/codeforbuenosaires/codeforbuenosaires.org.svg?branch=master)](https://travis-ci.org/codeforbuenosaires/codeforbuenosaires.org)
 
 ## Running local server
